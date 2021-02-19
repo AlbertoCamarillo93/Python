@@ -1,0 +1,24 @@
+{% extends 'food/base.html' %}
+
+{% block body %}
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <br>
+                <img height="350px" width="500px" src="{{ item.item_image}}" class="card"/>
+            </div>
+
+            <div class="col-md-6">
+                <br>
+                <h1>Platillo: {{object.item_name}}</h1>
+                <h2>Ingredientes:</h2>
+                <h5>{{object.item_desc}}</h5>
+                <h5>Precio aproximado:${{object.item_price}}</h5>
+                <h6>Agregado por: {{ item.user_name }}</h6>
+                <a class="btn btn-danger" href="{% url 'food:delete_item' item.id %}">Delete</a>
+            </div>
+        </div>
+    </div> 
+
+{% endblock %}

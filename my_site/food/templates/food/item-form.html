@@ -1,0 +1,26 @@
+{% extends 'food/base.html '%}
+
+{% block body %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 offset-md-4">
+            <div class="card">
+                <div class="card-header text-white bg-info">
+                    <div class="card-title">
+                        <h4 class="text-center">Agregar Receta</h4>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <form method="POST">
+                        {% csrf_token %}
+                        <h5 class="text-center"> {{ form }} </h5>
+                        <button class="btn btn-info btn-lg btn-block" type="submit">Agregar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div> 
+</div>
+
+{% endblock %}
