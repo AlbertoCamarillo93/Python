@@ -1,5 +1,5 @@
 # Python
-Para ejecutar la página web se requiere de ejecutar en el CMD como administrador el siguiente comando:
+Para ejecutar la página web en Djengo se requiere de ejecutar en el CMD como administrador el siguiente comando:
 
 --    python manage.py runserver ---
 
